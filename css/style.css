@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background: url(../img/1.JPG);
+    background-position: center center;
+}
+
+.wrapper_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form_registration {
+    padding: 10px;
+    width: 400px;
+}
+
+.button {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffff;
+    width: 100%;
+    height: 50px;
+    border: 2px solid green;
+}
+
+hr {
+    border: 2px solid green;
+}
+
+.form_registration a {
+    text-decoration: none;
+    transition: .99s;
+}
+
+.form_registration input {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid green;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.tab_form {
+    display: none;
+}
+
+label.tab {
+    color: aliceblue;
+    font-weight: 700;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+
+label.tab_active,
+input[name="tabs"]:checked+label {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+input[name="tabs"] {
+    display: none;
+}
+
+.tab_form.active,
+#tab_login:checked~#form_registration,
+#tab_register:checked~#form_entrance {
+    display: block;
+}
+
+.del {
+    display: none;
+}
