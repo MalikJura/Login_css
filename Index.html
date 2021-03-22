@@ -5,43 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>login</title>
+    <title>Login</title>
 </head>
 
 <body>
+    <div class="wrapper_container">
+        <div class="form_registration">
 
-    <div class="dws-wrapper">
-        <div class="dws-form">
+            <input type="radio" name="tabs" id="tab_login" checked>
+            <label class="tab" for="tab_login" title="Login">Login</label>
 
-            <input type="radio" name="tabs" id="tab_1" checked>
-            <label class="tab" for="tab_1" title="Login">Login</label>
+            <input type="radio" name="tabs" id="tab_register">
+            <label class="tab" for="tab_register" title="Register">Register</label>
 
-            <input type="radio" name="tabs" id="tab_2">
-            <label class="tab" for="tab_2" title="Register">Register</label>
-
-            <form id="form_1" class="tab-form">
+            <form id="form_registration" class="tab_form">
                 <input type="text" placeholder="User name">
                 <input type="password" placeholder="Password">
                 <a href="#" class="button">Sign in</a>
                 <hr>
             </form>
 
-            <form id="form_2" class="tab-form">
+            <form id="form_entrance" class="tab_form">
                 <input type="text" placeholder="User name">
-                <input type="text" placeholder="full name">
+                <input type="text" placeholder="Full name">
                 <input type="password" placeholder="Password">
-                <input type="password" placeholder="repeat password">
-
+                <input type="password" placeholder="Repeat password">
                 <a href="#" class="button">Sign up</a>
                 <hr>
             </form>
         </div>
     </div>
-
-
 </body>
-
 </html>
